@@ -1,13 +1,130 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color:#d8f3fd;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header{
+  padding: 40px 50px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.auto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-search{
+  width: 100%;
+  height: 25px;
+  margin: auto;
+  font-size: 1.1rem;
+  
+}
+main{
+  min-height: 80vh;
+/*   padding: 0 50px; */
+}
+
+footer{
+  text-align: center;
+  padding: 25px;
+}
+
+.foo{
+  margin: 10px;
+  font-size: 18px;
+}
+
+.card-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title{
+  margin-left: 15px;
+  font-size: 30px;
+}
+
+
+.Card{
+  width: 245px;
+  height: 250px;
+  margin: 20px;
+  background-color: white;
+  border: 1.5px solid #9E5A59;
+  border-radius: 8px;
+  overflow: hidden;
+  align-content: center;
+  box-shadow: inset 0 0 0 100px #f0efefaa;
+  transition: box-shadow 400ms;
+  
+}
+
+.Card img{
+  margin: auto;
+  margin-top: 6px;
+  border-radius: 12px;
+  align-content: center;
+  display: block;
+  width: 90%;
+  height: 80%;
+}
+
+.Card img:hover{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.Card p{
+  margin-top: 8px;
+  text-align: center;
+}
+
+@media (min-width: 375px) and (max-width: 632px){
+  .Card{
+    width: 445px;
+    height: 260px;
+    margin-right: 44px;
+  }
+  header{
+    padding: 30px 35px;
+  }
+  
+  h2{
+    font-size: 35px;
+  }
+  .title{
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 714px) and (max-width: 914px){
+  .Card{
+    width: 445px;
+    height: 300px;
+    margin:auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1202px){
+  .Card{
+    width: 545px;
+    height: 380px;
+    margin:auto;
+    margin-bottom: 30px;
+  }
 }
