@@ -26,7 +26,7 @@ const Category = ({ca}) => {
         })
         setimages(gifs)
       }else{
-        alert('No se encontraron resultados para su busqueda, escribe bien la wea uwu >.<')
+        alert('No se encontraron resultados para su busqueda >.<')
       }
     }
 
